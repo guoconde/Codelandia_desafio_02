@@ -12,7 +12,7 @@
 
 ### Link Deploy:
 
-[Clique Aqui para acessar o site, com o resultado final.](https://codelandia-desafio-01.vercel.app/)
+[Clique Aqui para acessar o site, com o resultado final.](https://codelandia-desafio-02.vercel.app/)
 
 ### Tecnologias utilizadas:
 
