@@ -8,7 +8,7 @@
 
 ### Imagem do desafio:
 
-![enter image description here](https://raw.githubusercontent.com/guoconde/Codelandia_desafio_01/main/public/imagem_desafio_01.png)
+![enter image description here](https://raw.githubusercontent.com/guoconde/Codelandia_desafio_02/main/public/desafio_02.png)
 
 ### Link Deploy:
 
