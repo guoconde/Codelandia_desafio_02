@@ -1,8 +1,12 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
+    * {
+        box-sizing: border-box;
+    }
+    
     body {
-        background-color: #F3F5F7;
+        background-color: #EBE9EA;
         font-family: Montserrat;
     }
 `
