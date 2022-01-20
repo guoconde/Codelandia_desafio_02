@@ -6,7 +6,7 @@ export const GlobalStyle = createGlobalStyle`
     }
     
     body {
-        background-color: #EBE9EA;
+        background-color: #F9F9F9;
         font-family: Montserrat;
     }
 `

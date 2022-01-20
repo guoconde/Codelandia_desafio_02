@@ -28,6 +28,7 @@ const DivHeader = styled.div`
 `
 
 const HeaderGift = styled.div`
+    width: 100%;
     height: 60px;
 
     background-color: #181818;
@@ -39,18 +40,28 @@ const HeaderGift = styled.div`
     color: #f9f9f9;
 
     padding-top: 20px;
+
+    position: fixed;
+    top: 0;
+    z-index: 2;
 `
 
 const HeaderName = styled.div`
+    width: 100%;
     height: 60px;
     
     background-color: #f9f9f9;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 
     font-size: 24px;
     font-weight: 600;
     text-align: center;
     
     padding-top: 20px;
+
+    position: fixed;
+    top: 60px;
+    z-index: 2;
 `
 
 const HeaderBanner = styled.div`
@@ -59,11 +70,13 @@ const HeaderBanner = styled.div`
 
     background-color: #181818;
 
+    margin-top: 120px;
+
     position: relative;
+    overflow: hidden;
     
     img {
-        background-position: center;
-        background-size: contain;
+        width: 100%;
         height: 378px;
         opacity: 0.6;
     }
@@ -82,7 +95,7 @@ const HeaderBanner = styled.div`
         
         h1 {
             margin-bottom: 20px;
-            
+
             font-size: 32px;
         }
     }
