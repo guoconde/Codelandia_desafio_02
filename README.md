@@ -10,6 +10,8 @@
 
 ![enter image description here](https://raw.githubusercontent.com/guoconde/Codelandia_desafio_02/main/public/desafio_02.png)
 
+![enter image description here](https://raw.githubusercontent.com/guoconde/Codelandia_desafio_02/main/public/desafio_02.gif)
+
 ### Link Deploy:
 
 [Clique Aqui para acessar o site, com o resultado final.](https://codelandia-desafio-02.vercel.app/)
