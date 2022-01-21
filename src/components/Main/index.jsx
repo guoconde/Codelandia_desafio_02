@@ -21,7 +21,6 @@ export default function Main() {
 
     function handleBuy(i) {
 
-
         if (buy.includes(i)) {
             removeItem(i)
         } else {
@@ -98,6 +97,8 @@ const DivMain = styled.div`
         color: #f9f9f9;
         margin-top: 60px;
 
+        cursor: pointer;
+        
         :active {
             background-color: black;
             color: gray;
