@@ -10,7 +10,7 @@
 
 ![enter image description here](https://raw.githubusercontent.com/guoconde/Codelandia_desafio_02/main/public/desafio_02.png)
 
-![enter image description here](https://raw.githubusercontent.com/guoconde/Codelandia_desafio_02/main/public/desafio_02.gif)
+![enter image description here](https://raw.githubusercontent.com/guoconde/Codelandia_desafio_02/main/public/Desafio_02.gif)
 
 ### Link Deploy:
 
