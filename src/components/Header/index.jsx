@@ -1,15 +1,41 @@
+import { useEffect, useState } from "react";
 import styled from "styled-components";
 
 import ImageBanner from '../../assets/images/image_banner.png'
+import ImageBannerMini from '../../assets/images/image_banner_mini.png'
 
 export default function Header() {
+    const size = useWindowSize();
+
+    function useWindowSize() {
+        const [windowSize, setWindowSize] = useState({
+            width: undefined,
+        });
+
+        useEffect(() => {
+            function handleResize() {
+                setWindowSize({
+                    width: window.innerWidth,
+                });
+            }
+            window.addEventListener("resize", handleResize);
+            handleResize();
+            return () => window.removeEventListener("resize", handleResize);
+        }, []);
+        return windowSize;
+    }
+
     return (
         <>
             <DivHeader>
                 <HeaderGift>Ganhe R$ 10,00 de desconto no frete</HeaderGift>
                 <HeaderName>JordanShoes</HeaderName>
                 <HeaderBanner>
-                    <img src={ImageBanner} alt='Imagem_do_banner' />
+                    {
+                        size.width > 450 ? 
+                        <img src={ImageBanner} alt='Imagem_do_banner' /> :
+                        <img src={ImageBannerMini} alt='Imagem_do_banner_mini' /> 
+                    }
                     <div>
                         <h1>A melhor loja de Jordan</h1>
                         <p>O tênis Jordan é fruto de uma velha e forte parceria entre a Nike e o jogador Michael Jordan.</p>
@@ -69,13 +95,14 @@ const HeaderBanner = styled.div`
     height: 378px;
 
     background-color: #181818;
-
+    
     margin-top: 120px;
 
     position: relative;
     overflow: hidden;
     
     img {
+        object-fit: cover;
         width: 100%;
         height: 378px;
         opacity: 0.6;
@@ -98,5 +125,21 @@ const HeaderBanner = styled.div`
 
             font-size: 32px;
         }
+        
+        @media (max-width: 450px) {
+            width: 359px;
+            
+            left: 20px;
+            
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 29px;
+
+            h1 {
+                font-size: 28px;
+            }
+        }
     }
+
+    
 `
